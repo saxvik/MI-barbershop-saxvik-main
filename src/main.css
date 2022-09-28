@@ -1,0 +1,11 @@
+.wrapper-banner {
+    height: 3rem;
+    width: 100%;
+
+    background-color: black;
+}
+
+h1 {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    color: white;
+}
