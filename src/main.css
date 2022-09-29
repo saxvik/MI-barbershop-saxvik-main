@@ -95,10 +95,8 @@ h2 {
 .column-service {
     height: 350px;
     width: 100vw;
-    background-color: rgb(191, 146, 91);
+
     border: 2px solid black;
-
-
 
 }
 
@@ -115,13 +113,97 @@ h3 {
     padding-top: 3rem;
     padding-left: 2rem;
     padding-right: 2rem;
+    background-color: rgb(191, 146, 91);
+
 }
 
-img {
+
+
+.klipp {
     height: 140px;
     margin-top: -120px;
 
+}
 
+.about-wrapper {
+    width: 100vw;
+    height: 844px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stol-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+
+}
+
+.stol {
+    height: 400px;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 1rem;
+}
+
+.about-gold {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: medium;
+    color: rgb(191, 146, 91);
+    margin-bottom: 1rem;
+}
+
+.about-black {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: x-large;
+    text-transform: uppercase;
+    color: rgb(20, 27, 37);
+    margin-top: 0%;
+    margin-bottom: 1rem;
+
+}
+
+.about-text {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(20, 27, 37);
+    width: 400px;
+}
+
+.award {
+    height: 3rem;
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 01.5rem;
+    background-color: rgb(191, 146, 91);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.award-text {
+    padding-left: 1rem;
+    color: white;
+}
+
+.award-20 {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: x-large;
+    margin-bottom: 0%;
+}
+
+.award-exp {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: small;
+    margin-top: 0%;
 }
 
 
@@ -132,5 +214,16 @@ img {
         flex-direction: row;
         width: 1fr 1fr 1fr 1fr;
 
+    }
+
+    .about-wrapper {
+        flex-direction: row;
+        width: 1fr 1fr;
+        height: fit-content;
+
+    }
+
+    .stol-container {
+        padding-left: 20%;
     }
 }
