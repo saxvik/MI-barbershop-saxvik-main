@@ -34,7 +34,7 @@ h1 {
     width: 100vw;
     height: 844px;
     display: flex;
-
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -43,8 +43,14 @@ h1 {
 
 .welcome-container-content {
     width: 370px;
+
     border-left: 2px solid rgb(191, 146, 91);
     padding-left: 3rem;
+
+}
+
+h1 {
+    font-family: 'Barlow Semi Condensed', sans-serif;
 
 }
 
@@ -136,12 +142,14 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 2rem;
 }
 
 .stol-container {
     display: flex;
     justify-content: center;
     margin-top: 1rem;
+    /*margin-bottom: 1rem;*/
 
 }
 
@@ -178,6 +186,7 @@ h3 {
     font-family: 'Poppins', sans-serif;
     color: rgb(20, 27, 37);
     width: 400px;
+    text-align: left;
 }
 
 .award {
@@ -211,6 +220,83 @@ h3 {
     margin-top: 0%;
 }
 
+.testimonial-wrapper {
+    height: fit-content;
+    width: 100vw;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    background-color: rgb(235, 232, 222);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*justify-content: space-between;*/
+
+
+}
+
+.test-title {
+    text-align: center;
+}
+
+.review {
+    height: 200px;
+    width: 320px;
+    background-color: white;
+    margin-top: 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: small;
+}
+
+.circle {
+    width: 2rem;
+    height: 2rem;
+    background-color: rgb(172, 120, 56);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -15px;
+    margin-left: 2rem;
+}
+
+.quote {
+    color: white;
+}
+
+.stars {
+    color: rgb(172, 120, 56);
+}
+
+cite {
+    color: rgb(172, 120, 56);
+}
+
+.person-info {
+    display: flex;
+}
+
+.person-img {
+    width: 60px;
+    padding-left: 2rem;
+    padding-right: 0.5rem;
+}
+
+
+
+
+
+
+
+
+/*figcaption {
+    font-weight: bolder;
+}*/
+
+
+
+
+
 
 @media screen and (min-width:800px) {
 
@@ -231,4 +317,6 @@ h3 {
     .stol-container {
         padding-left: 20%;
     }
+
+
 }
