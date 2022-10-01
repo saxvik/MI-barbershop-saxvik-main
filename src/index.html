@@ -19,6 +19,8 @@
 
 </head>
 
+
+
 <body>
 
     <header>
@@ -26,21 +28,23 @@
             <div class="logo">
                 <h1>BARBERSHOP</h1>
             </div>
-            <div class="menu">
-                <a class="menu-button">menu</a>
-            </div>
+
+
+            <nav>
+                <button id="menu-button">MENU</button>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">PRICING</a></li>
+                        <li><a href="#"></a>GALLERY</li>
+                        <li><a href="#">TEAM</a></li>
+                        <li><a href="#"></a>BLOG</li>
+                        <li><a href="#"></a>CONTACT</li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li>MENU</li>
-                <li>ABOUT</li>
-                <li>PRICING</li>
-                <li>GALLERY</li>
-                <li>TEAM</li>
-                <li>BLOG</li>
-                <li>CONTACT</li>
-            </ul>
-        </nav>
     </header>
 
     <main>
@@ -48,9 +52,8 @@
         <div class="welcome-container">
 
             <div class="welcome-container-content">
-
-                <h2 class="solid-small">WELCOME TO BARBERSHOP</h2>
-                <h1 class="solid-white">WE WILL MAKE <span class="invert-text">YOUR <br> STYLE</span> OF YOUR DREAMS
+                <h1 class="solid-white">WELCOME TO BARBERSHOP<br>
+                    WE WILL MAKE <span class="invert-text">YOUR <br> STYLE</span> OF YOUR DREAMS
                 </h1>
                 <p class="welcome-text">A small river named Duden flows by their place and supplies it with the
                     necessary regelialia.
@@ -285,11 +288,11 @@
                     </li>
                     <li>
                         <i class="fa-solid fa-phone" id="brands"></i>
-                        +2 392 3929 210
+                        <a href="tel:#">+2 392 3929 210</a>
                     </li>
                     <li>
                         <i class="fa-solid fa-paper-plane" id="brands"></i>
-                        info@yourdomain.com
+                        <a href="mailto:#"> info@yourdomain.com</a>
                     </li>
                 </ul>
             </div>
@@ -305,7 +308,12 @@
 
 
 
-
+    <script>
+        const menuBtn = document.querySelector('#menu-button');
+        menuBtn.addEventListener('click', () => {
+            menuBtn.classList.toggle('menu-open');
+        });
+    </script>
 
 </body>
 

@@ -1,3 +1,9 @@
+body {
+    width: 100%;
+}
+
+
+
 .wrapper-banner {
     height: 3rem;
     width: 100vw;
@@ -5,6 +11,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    opacity: 0.9;
+
+
 }
 
 .logo {
@@ -19,13 +29,46 @@ h1 {
 
 }
 
-.menu-button {
 
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    text-transform: uppercase;
-    color: wheat;
-    padding-right: 5px;
+button+.menu {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
 }
+
+button.menu-open+.menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+#menu-button {
+
+    font-family: 'Poppins', sans-serif;
+    color: rgb(172, 120, 56);
+    background-color: rgb(20, 27, 37);
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    padding-right: 1rem;
+
+
+}
+
+.menu {
+    font-family: 'Poppins', sans-serif;
+    padding-right: 1rem;
+    padding-top: 7rem;
+
+
+}
+
+.menu:hover {
+    color: rgb(172, 120, 56);
+}
+
 
 .welcome-container {
 
@@ -49,18 +92,9 @@ h1 {
 
 }
 
-h1 {
-    font-family: 'Barlow Semi Condensed', sans-serif;
-
-}
 
 h2 {
     font-family: 'Barlow Semi Condensed', sans-serif;
-}
-
-.solid-small {
-    color: rgb(191, 146, 91);
-    margin-bottom: 0%;
 }
 
 .solid-white {
@@ -68,6 +102,11 @@ h2 {
     font-size: 2rem;
     margin-top: 0%;
 
+}
+
+.solid-white::first-line {
+    color: rgb(191, 146, 91);
+    font-size: large;
 }
 
 .invert-text {
@@ -86,12 +125,18 @@ h2 {
 .button {
     font-family: 'Barlow Semi Condensed', sans-serif;
     color: rgb(191, 146, 91);
-    border-color: rgb(191, 146, 91);
     text-decoration: none;
     padding: 0.7em 1.5em;
     border: 2px solid rgb(191, 146, 91);
 
+
 }
+
+.button:hover {
+    background-color: rgb(235, 232, 222);
+}
+
+
 
 .services-wrapper {
     display: flex;
@@ -337,7 +382,14 @@ ul {
 a {
     color: white;
     text-decoration: none;
+
 }
+
+a:hover {
+    color: rgb(172, 120, 56);
+}
+
+
 
 
 
