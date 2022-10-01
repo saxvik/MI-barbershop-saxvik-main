@@ -230,13 +230,23 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*justify-content: space-between;*/
+
+
+
 
 
 }
 
 .test-title {
     text-align: center;
+
+}
+
+
+
+.person-wrapper {
+    display: flex;
+    flex-direction: column;
 }
 
 .review {
@@ -246,6 +256,9 @@ h3 {
     margin-top: 2rem;
     font-family: 'Poppins', sans-serif;
     font-size: small;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
 }
 
 .circle {
@@ -318,5 +331,11 @@ cite {
         padding-left: 20%;
     }
 
+    .person-wrapper {
 
-}
+        flex-direction: row;
+    }
+
+    .testimonial-wrapper {
+        flex-direction: column;
+    }
