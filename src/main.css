@@ -295,16 +295,55 @@ cite {
     padding-right: 0.5rem;
 }
 
+.footer-wrapper {
+    background-color: rgb(20, 27, 37);
+    height: fit-content;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer-content {
+
+    padding: 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: small;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.brands,
+#brands {
+    color: rgb(172, 120, 56);
+}
+
+p {
+    margin-top: 0%;
+
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: white;
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
 
 
 
 
 
 
-
-/*figcaption {
-    font-weight: bolder;
-}*/
 
 
 
@@ -338,4 +377,9 @@ cite {
 
     .testimonial-wrapper {
         flex-direction: column;
+    }
+
+    .footer-wrapper {
+        flex-direction: row;
+        justify-content: center;
     }
