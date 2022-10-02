@@ -308,6 +308,8 @@ h3 {
 
 }
 
+
+
 .circle {
     width: 2rem;
     height: 2rem;
@@ -330,10 +332,15 @@ h3 {
 
 cite {
     color: rgb(172, 120, 56);
+    margin-top: 0%;
 }
 
 .person-info {
     display: flex;
+}
+
+.customer p {
+    margin-bottom: 0%;
 }
 
 .person-img {
@@ -449,13 +456,13 @@ a:hover {
     .services-wrapper {
 
         flex-direction: row;
-        width: 1fr 1fr 1fr 1fr;
+
 
     }
 
     .about-wrapper {
         flex-direction: row;
-        width: 1fr 1fr;
+
         height: fit-content;
 
     }
@@ -467,6 +474,7 @@ a:hover {
     .person-wrapper {
 
         flex-direction: row;
+        justify-content: center;
     }
 
     .testimonial-wrapper {
