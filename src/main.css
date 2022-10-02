@@ -19,9 +19,6 @@ body {
 
 }
 
-/*.logo {
-    justify-content: center;
-}*/
 
 h1 {
     font-family: 'Barlow Semi Condensed', sans-serif;
@@ -32,51 +29,53 @@ h1 {
 }
 
 
-
-button+.menu {
-    display: none;
-    opacity: 0;
-    visibility: hidden;
-}
-
 button.menu-open+.menu {
     display: block;
     opacity: 1;
     visibility: visible;
 }
 
+
 #menu-button {
-
+    background-color: transparent;
+    border: 0;
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
     font-family: 'Poppins', sans-serif;
-    color: rgb(172, 120, 56);
-    background-color: rgb(20, 27, 37);
-    border: none;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    padding-right: 1rem;
-
-
+    font-size: 1em;
+    padding-right: 2rem;
 }
 
 .menu {
+    display: none;
+}
+
+.menu ul {
+    padding-top: 5rem;
+}
+
+.menu li {
+
+    padding: 0 1.8em;
+    font-size: 0.7em;
+    letter-spacing: 0.05em;
     font-family: 'Poppins', sans-serif;
-    padding-right: 1rem;
-    padding-top: 7rem;
-
-
 }
 
-.menu:hover {
-    color: rgb(172, 120, 56);
+
+
+.menu li:hover {
+    color: rgb(191, 146, 91);
 }
+
+
 
 
 .welcome-container {
 
     background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
-        url(welcome.jpg);
+        url(welcome-m.jpg);
     width: 100vw;
     height: 844px;
     display: flex;
@@ -197,7 +196,7 @@ h3 {
     display: flex;
     justify-content: center;
     margin-top: 1rem;
-    /*margin-bottom: 1rem;*/
+    margin-bottom: 1rem;
 
 }
 
@@ -399,13 +398,53 @@ a:hover {
 
 
 
-
-
-
-
-
-
 @media screen and (min-width:800px) {
+
+
+    .logo {
+        padding-left: 20%;
+    }
+
+    #menu-button {
+        display: none;
+    }
+
+    .menu {
+        padding-top: 0%;
+        display: flex;
+        float: right;
+
+    }
+
+    .menu ul {
+        padding-top: 0;
+    }
+
+    .menu-li {
+        float: left;
+        display: block;
+    }
+
+    .menu-li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px;
+        text-decoration: none;
+
+
+    }
+
+    .menu-li a:hover {
+        color: rgb(172, 120, 56);
+    }
+
+
+    .welcome-container {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
+            url(welcome.jpg);
+
+    }
 
     .services-wrapper {
 
@@ -438,55 +477,3 @@ a:hover {
         flex-direction: row;
         justify-content: center;
     }
-
-    button+.menu {
-        visibility: hidden;
-        display: inline;
-        float: right;
-        display: none;
-        /*KANSKE*/
-    }
-
-    button.menu-open+.menu {
-        display: inline;
-        float: right;
-        opacity: 1;
-        visibility: visible;
-
-
-    }
-
-    .menu {
-        padding-top: 0%;
-
-
-    }
-
-
-    .menu-ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: visible;
-
-
-        /*KOLLA DETTA
-        background-color: #333;*/
-    }
-
-    .menu-li {
-        float: left;
-    }
-
-    .menu-li a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px;
-        text-decoration: none;
-
-    }
-
-    /*#menu-button {
-        display: none;
-    }*/
